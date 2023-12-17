@@ -1,0 +1,125 @@
+/* _Start Custom Containers_ */
+.container {
+  padding: 0 0.75rem;
+  margin: auto;
+  border: 1px solid;
+  border-color: transparent;
+  box-sizing: content-box;
+
+  @media (max-width: 575px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+/* _End Custom Containers_ */
+
+.card-container{
+  background-color: #9dbdbaFF;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  &::after{
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+    background-color: #ffff ;
+    opacity: 0.4;
+  }
+}
+.card-details-holder{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  color: #ffff;
+  font-family: 'Roboto Mono';
+  padding: 23px 32px 31px;
+  gap: 20px;
+  align-items: center;
+  &::after{
+  content: "";
+  position: absolute;
+  width: 0;
+	height: 0;
+  bottom: -1px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #ffffff;
+  }
+  .card-title{
+    span{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0px;
+      text-decoration: None;
+      text-transform: none;
+    }
+  }
+
+  .card-text{
+    span{
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0px;
+      text-decoration: none;
+      text-transform: none;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      text-align: center;
+      user-select: none;
+      cursor: pointer;
+        }
+ }
+
+
+  .full-content {
+    display: block !important;
+    -webkit-line-clamp: unset; /* Reset line clamp */
+  }
+  .read-more-button{
+    background-color: #f8b042FF;
+    border: none;
+    color: #ffff;
+    padding: 9.04px 25px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
