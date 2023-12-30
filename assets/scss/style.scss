@@ -123,3 +123,52 @@
     text-decoration: none;
   }
 }
+
+// apply btn style begain
+
+.apply-now{
+    position: relative;
+    color: #ffff;
+    text-transform: capitalize;
+    background-color: #9dbdba;
+    border: none;
+    border-radius: 15px;
+    max-width: 140px;
+    height: auto;
+    padding: 16px 32.5px 12.5px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-style: normal;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -1px;
+      right: 3.8rem;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #ffffff;
+      }
+      &::before{
+        content: "";
+        height: 58px;
+        width: 60px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        bottom: -2rem;
+        left: -2rem;
+        background-color: #ffff ;
+        opacity: 0.4;
+      }
+     
+  }
+:hover{
+     background-color: #F8B042;
+      }
